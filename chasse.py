@@ -72,3 +72,16 @@ def deplacement():
 
 fic_proies = open("sauvegarde_proies", "w")
 fic_predateurs = open("sauvegarde_predateur", "w")
+
+fic_proies.write (PROIES)
+fic_predateurs.write (PREDATEURS)
+
+
+fic_proies.close()
+fic_predateurs.close()
+
+fic_in = open("sauvegarde_proies", "r")
+fic_out = open("sauvegarde_predateurs", "r")
+
+fic_in.close()
+fic_out.close()
