@@ -85,3 +85,25 @@ fic_out = open("sauvegarde_predateurs", "r")
 
 fic_in.close()
 fic_out.close()
+
+def Sauvegarder():
+    pass 
+
+def Charger():
+    pass
+
+#donnees largeur et hauteur 
+LARGEUR = 300
+HAUTEUR = 300 #(à changer en fonction de ce qu'on mettra)
+#Fonctions sauvegarde et charger tkinter
+
+racine = tk.Tk()
+canvas = tk.Canvas(racine, bg="black", width=LARGEUR, height=HAUTEUR)
+
+sauvegarder = tk.Button(racine, text="Sauvegarder", command= Sauvegarder)
+charger = tk.Button (racine, text="Charger", command= Charger)
+
+#positionnement 
+sauvegarder.grid(racine, row = 1, column = 1)
+charger.grid(racine, row = 2, column = 1)
+racine.mainloop()
